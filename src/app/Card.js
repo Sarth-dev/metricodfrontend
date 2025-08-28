@@ -5,7 +5,7 @@ function Card() {
     const [card , setCard] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:4000/api/seed")
+        fetch("https://metricodbackend.onrender.com/api/seed")
         .then((res) => res.json())
         .then((data) => setCard(data));
     }, []);
